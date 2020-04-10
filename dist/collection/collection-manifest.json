@@ -1,0 +1,39 @@
+{
+  "entries": [
+    "components\\button-group-component\\button-group-component.js",
+    "components\\button-component\\button-component.js",
+    "components\\card-component\\card-deck.js",
+    "components\\calendar-component\\calendar-component.js",
+    "components\\carousel-component\\carousel-body.js",
+    "components\\carousel-component\\carousel-component.js",
+    "components\\dropdown-component\\dropdown-component.js",
+    "components\\dropdown-component\\dropdown-menu.js",
+    "components\\form-component\\dropdown-component.js",
+    "components\\card-component\\card-component.js",
+    "components\\form-component\\form-component.js",
+    "components\\alert\\alert-component.js",
+    "components\\form-component\\newInput-component.js",
+    "components\\form-component\\textarea-component.js",
+    "components\\form-component\\submitbutton-component.js",
+    "components\\tab-component\\anchor.js",
+    "components\\list-component\\list-component.js",
+    "components\\form-component\\newform-component.js",
+    "components\\loader-component\\loader-component.js",
+    "components\\pagination-component\\pagination-component.js",
+    "components\\tab-component\\tab-list.js",
+    "components\\form-component\\radio-checkbox-component.js",
+    "components\\table-component\\table.js",
+    "components\\table-component\\table-component.js",
+    "components\\alert-component\\alert-component.js",
+    "components\\tab-component\\tab.js",
+    "components\\tab-component\\tab-component.js",
+    "components\\tab-component\\tab-content.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "1.8.8",
+    "typescriptVersion": "3.7.5"
+  },
+  "collections": [],
+  "bundles": []
+}

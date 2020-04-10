@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/build/rci-design-system.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/build/rci-design-system.esm.js"></script>
+    <script nomodule src="/build/rci-design-system.js"></script>
+  </head>
+
+  <body>
+    <div class="rcio-ds">
+      <div class="container">
+        <button-component
+          rci-disabled="false"
+          rci-name="Primary-Small"
+          rci-class="shadow-1 btn btn-primary btn-sm"
+        >
+        </button-component>
+        <button-group-component>
+          <button-component
+            rci-disabled="false"
+            rci-name="Left"
+            rci-class="btn btn-primary btn-sm"
+          ></button-component>
+          <button-component
+            rci-disabled="false"
+            rci-name="Middle"
+            rci-class="btn btn-primary btn-sm"
+          ></button-component>
+          <button-component
+            rci-disabled="false"
+            rci-name="Right"
+            rci-class="btn btn-primary btn-sm"
+          ></button-component>
+        </button-group-component>
+
+        <alert-comp rciclass="fade alert alert-primary show">
+          This is primary alert with
+          <a class="alert-link" href="#" role="button">an example link</a>
+          . Give it a click if you like.
+        </alert-comp>
+
+        <rci-table
+          rci-class="table-striped table-bordered table-hover"
+        ></rci-table>
+
+        <list-component>
+          <div class="list-group-item">Cras justo odio</div>
+          <div class="list-group-item">Dapibus ac facilisis in</div>
+          <div class="list-group-item">Morbi leo risus</div>
+          <div class="list-group-item">Porta ac consectetur ac</div>
+          <div class="list-group-item">Vestibulum at eros</div>
+        </list-component>
+        <br />
+        <hr />
+        <rci-tab>
+          <tab-list>
+            <rci-anchor
+              rci-name="tab 1"
+              rci-href="#"
+              rci-class="nav-link active"
+            ></rci-anchor>
+            <rci-anchor
+              rci-name="tab 1"
+              rci-href="#"
+              rci-class="nav-link "
+            ></rci-anchor>
+            <rci-anchor
+              rci-name="tab 1"
+              rci-href="#"
+              rci-class="nav-link "
+            ></rci-anchor>
+          </tab-list>
+          <tab-content>
+            <div
+              id="uncontrolled-tab-example-tabpane-home"
+              aria-labelledby="uncontrolled-tab-example-tab-home"
+              role="tabpanel"
+              aria-hidden="false"
+              class="fade tab-pane active show"
+            >
+              <div class="p-2 bg-white">
+                Tab 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ab, rem!
+              </div>
+            </div>
+          </tab-content>
+        </rci-tab>
+        <br />
+        <hr />
+        <dropdown-component
+          dropdown-class="btn-sm"
+          dropdown-button-name="Dropdown Small"
+          dropdown-id="dropdown-small"
+          dropdown-menu-placement="bottom-start"
+        >
+          <dropdown-menu
+            menu-option="First Option"
+            href-option="#"
+          ></dropdown-menu>
+          <dropdown-menu
+            menu-option="Second Option"
+            href-option="#"
+          ></dropdown-menu>
+        </dropdown-component>
+
+        <dropdown-component
+          dropdown-id="dropdown-small"
+          dropdown-menu-placement="bottom-start"
+          dropdown-button-name="Dropdown Default"
+        >
+          <dropdown-menu
+            menu-option="First Option"
+            href-option="#"
+          ></dropdown-menu>
+          <dropdown-menu
+            menu-option="Second Option"
+            href-option="#"
+          ></dropdown-menu>
+        </dropdown-component>
+        <br />
+        <hr />
+        <card-deck>
+          <card-component
+            redirect-url="#1"
+            image-url="https://www.rci.com/static/images/content/_NAMER/nav-flyouts/new-hotels-header.jpg"
+            card-title="See Profile"
+          ></card-component>
+          <card-component
+            redirect-url="#2"
+            image-url="https://www.rci.com/static/images/content/_NAMER/nav-flyouts/new-hotels-header.jpg"
+            card-title="See Another Profile"
+          ></card-component>
+          <card-component
+            redirect-url="#3"
+            image-url="https://www.rci.com/static/images/content/_NAMER/nav-flyouts/new-hotels-header.jpg"
+            card-title="See Yet Another Profile"
+          ></card-component>
+        </card-deck>
+        <br />
+        <hr />
+
+        <loader-spinner-component rci-type="border" rci-class="success">
+        </loader-spinner-component>
+        <loader-spinner-component rci-type="spread" rci-class="success">
+        </loader-spinner-component>
+        <loader-spinner-component
+          rci-type="grow"
+          rci-class="success"
+        ></loader-spinner-component>
+
+        <button-component
+          rci-disabled="false"
+          rci-name="hi"
+          rci-class="btn btn-primary"
+        >
+          <loader-spinner-component
+            rci-type="spread"
+            rci-class="secondary spinner-border-lg"
+          ></loader-spinner-component>
+        </button-component>
+
+        <br />
+        <hr />
+        <carousel-component>
+          <carousel-body
+            carousel-image-url="https://www.w3schools.com/bootstrap4/ny.jpg"
+            carousel-image-alt="1st Image"
+            carousel-heading="First slide label"
+            carousel-description="Nulla vitae elit libero, a pharetra augue mollis interdum."
+            active-class="active"
+          ></carousel-body>
+          <carousel-body
+            carousel-image-url="https://www.w3schools.com/bootstrap4/la.jpg"
+            carousel-image-alt="2nd Image"
+            carousel-heading="Second slide label"
+            carousel-description="Nulla vitae elit libero, a pharetra augue mollis interdum."
+          ></carousel-body>
+        </carousel-component>
+        <br />
+        <hr />
+
+        <newform-component>
+          <newinput-component
+            input-content="Email"
+            input-type="email"
+            input-id="userEmail"
+            place-holder="Enter Email"
+            is-disabled="false"
+          >
+            <small id="emailHelp" class="form-text text-muted">
+              We'll never share your email with anyone else.
+            </small>
+          </newinput-component>
+          <newinput-component
+            input-content="Password"
+            input-type="password"
+            input-id="userPassword"
+            place-holder="Password"
+          >
+          </newinput-component>
+          <newinput-component
+            input-content="Disabled"
+            input-type="text"
+            input-id="userText"
+            place-holder="Disabled Field"
+            is-disabled="true"
+          >
+          </newinput-component>
+          <newinput-component
+            input-content="Error"
+            input-type="password"
+            input-id="userText"
+            place-holder="Error Field"
+            is-invalid-class="is-invalid"
+          >
+          </newinput-component>
+          <dropdown-component-form
+            dropdown-content="Example select"
+            dropdown-id="exampleFormControlSelect"
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </dropdown-component-form>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="false"
+            input-content="Option 1"
+            input-type="checkbox"
+            input-id="checkbox1"
+            input-name="option1"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="false"
+            input-content="Option 2"
+            input-type="checkbox"
+            input-id="checkbox2"
+            input-name="option2"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="true"
+            is-horizontal="false"
+            input-content="Option 3"
+            input-type="checkbox"
+            input-id="checkbox3"
+            input-name="option3"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="true"
+            input-content="1"
+            input-type="radio"
+            input-id="radiobutton1"
+            input-name="radiobutton"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="true"
+            input-content="2"
+            input-type="radio"
+            input-id="radiobutton2"
+            input-name="radiobutton"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="true"
+            is-horizontal="true"
+            input-content="3"
+            input-type="radio"
+            input-id="radiobutton3"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <br />
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="true"
+            input-content="1"
+            input-type="checkbox"
+            input-id="checkbox11"
+            input-name="1"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="true"
+            input-content="2"
+            input-type="checkbox"
+            input-id="checkbox12"
+            input-name="2"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="true"
+            is-horizontal="true"
+            input-content="3"
+            input-type="checkbox"
+            input-id="checkbox13"
+            input-name="3"
+            input-value="something"
+            custom-control="false"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="false"
+            input-content="Check this custom checkbox"
+            input-type="checkbox"
+            input-id="checkbox21"
+            input-name="checkthiscustomcheckbox"
+            input-value="something"
+            custom-control="true"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="false"
+            input-content="Check this custom checkbox"
+            input-type="checkbox"
+            input-id="checkbox22"
+            input-name="checkthiscustomcheckbox"
+            input-value="something"
+            custom-control="true"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="true"
+            is-horizontal="false"
+            input-content="Disabled checkbox"
+            input-type="checkbox"
+            input-id="checkbox23"
+            input-name="disabledcheckbox"
+            input-value="something"
+            custom-control="true"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="false"
+            input-content="Check this custom radio"
+            input-type="radio"
+            input-id="radiobutton21"
+            input-name="radio-button1"
+            input-value="rb1"
+            custom-control="true"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="false"
+            is-horizontal="false"
+            input-content="Check this custom radio"
+            input-type="radio"
+            input-id="radiobutton22"
+            input-name="radio-button1"
+            input-value="rb2"
+            custom-control="true"
+          ></radio-checkbox-component>
+          <radio-checkbox-component
+            is-disabled="true"
+            is-horizontal="false"
+            input-content="Disabled Radio"
+            input-type="radio"
+            input-id="radiobutton23"
+            custom-control="true"
+          ></radio-checkbox-component>
+          <textarea-component
+            textarea-content="Example Textarea"
+            textarea-id="exampleFormControlTextarea"
+          ></textarea-component>
+          <submit-button-component
+            btn-type="submit"
+            btn-content="Submit"
+            btn-class="btn btn-primary"
+          ></submit-button-component>
+          <hr />
+          <label htmlFor="customRange1">Range Content</label>
+          <input type="range" class="custom-range" id="customRange1" />
+        </newform-component>
+
+        <!--
+        <carousel-component></carousel-component>
+           
+  <br>
+  <tab-component active-class=" active" disable-class=" disabled" first-tab="Home" second-tab="Profile" third-tab="Contact" first-tab-content="Tab 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, rem!" second-tab-content="Tab 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, rem!" third-tab-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, rem!"></tab-component>
+  <br>
+  <list-component list-group-class="list-group-item"  first-list="Cras justo odio" second-list="Dapibus ac facilisis in" third-list="Morbi leo risus" fourth-list="Porta ac consectetur ac" fifth-list="Vestibulum at eros"></list-component>
+  <br>
+  <dropdown-component first-option="Action" second-option="Another Action" third-option="Something Else" dropdown-class="btn-sm" dropdown-small="Dropdown Small" dropdown-default="Dropdown Default"></dropdown-component>
+  <br>
+  <alert-component alert-sample=". Give it a click if you like." alert-clickable-sample=" an example link" error-message-sample='This is an example of a dismissible alert. The "close" button shows an "X" along with this message. Additional code requried to enable this functionality.' primary-alt-class="alert-primary" secondary-alt-class="alert-secondary " success-alt-class="alert-success" danger-alt-class="alert-danger " warning-alt-class="alert-warning" info-alt-class="alert-info " light-alt-class="alert-light " dark-alt-class="alert-dark "></alert-component>
+  <br>
+  <table-component first-head-name="#" second-head-name="First Name" third-head-name="Last Name" fourth-head-name="UserName" first-data="1" second-data="Mark" third-data="Otto" fourth-data="@adda"></table-component>
+  <br>
+  <pagination-component first-page="First" previous-page="Previous" more-page="More" next-page="Next" last-page="Last"></pagination-component>
+  <br>
+  <calendar-component calendar-class=" calendar-btn" calendar-active-class=" active" calendar-disable-class=" disabled"></calendar-component> -->
+      </div>
+    </div>
+  </body>
+</html>
